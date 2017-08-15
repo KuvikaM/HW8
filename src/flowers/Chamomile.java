@@ -6,6 +6,6 @@ package flowers;
 public class Chamomile extends Flower {
 
     public void show() {
-        System.out.println("Ромашка");
+        System.out.print("Ромашка");
     }
 }

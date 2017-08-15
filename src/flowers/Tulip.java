@@ -6,6 +6,6 @@ package flowers;
 public class Tulip extends Flower {
 
     public void show() {
-        System.out.println("Тюльпан");
+        System.out.print("Тюльпан");
     }
 }

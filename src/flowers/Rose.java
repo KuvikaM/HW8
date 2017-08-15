@@ -6,6 +6,6 @@ package flowers;
 public class Rose extends Flower {
 
     public void show() {
-        System.out.println("Роза");
+        System.out.print("Роза");
     }
 }

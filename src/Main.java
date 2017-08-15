@@ -16,7 +16,7 @@ public class Main {
         Flower[] flowers =  store.sell(2,3,4);
 
        store.executeInstanceOfFlowers(flowers);
-        System.out.println("///////////////////////////////////////////////");
+        System.out.println();
 
         Flower[] flowers1 = store.sellSequence(2,3,4);
 

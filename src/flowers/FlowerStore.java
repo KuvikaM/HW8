@@ -72,8 +72,9 @@ public class FlowerStore {
 
     public static void executeInstanceOfFlowers(Flower[] flowers) {
         for(Flower arrayElement : flowers) {
+
             arrayElement.show();
-            System.out.println();
+            System.out.print(" , ");
         }
     }
 

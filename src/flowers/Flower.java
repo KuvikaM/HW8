@@ -6,7 +6,7 @@ package flowers;
 public class Flower {
 
     public void show() {
-        System.out.println("Это цветок");
+        System.out.print("Это цветок");
     }
     protected int countFlower;
 }
