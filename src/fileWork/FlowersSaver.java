@@ -2,7 +2,9 @@ package fileWork;
 
 import flowers.Flower;
 
+import java.io.FileOutputStream;
 import java.io.FileWriter;
+import java.io.ObjectOutputStream;
 
 /**
  * Created by Liongate on 15.08.2017.
@@ -10,6 +12,25 @@ import java.io.FileWriter;
 public class FlowersSaver {
 
 private FlowersSaver(){}
+
+    public static void saveObj(String fileName, Flower[] flowers)
+
+    {
+        try {
+            FileOutputStream fos = new FileOutputStream(fileName);
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
+
+            oos.writeObject(flowers);
+            oos.flush();
+            oos.close();
+            }
+
+         catch (Exception e){
+            e.printStackTrace();
+        }
+
+
+    }
 
     public static void save(String fileName, Flower[] flowers){
         try {

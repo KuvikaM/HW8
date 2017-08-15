@@ -1,3 +1,4 @@
+import fileWork.FlowersLoader;
 import fileWork.FlowersSaver;
 import flowers.Flower;
 import flowers.FlowerStore;
@@ -30,9 +31,17 @@ public class Main {
 
 
         String fileName = "files/demo console file.txt";
-        
+        String objFileName = "files/objfile.txt";
 
        FlowersSaver.save(fileName,flowers);
+        FlowersSaver.saveObj(objFileName,flowers);
+        System.out.println("file load");
+
+        Flower[] loadFlowers = FlowersLoader.load(objFileName);
+        store.executeInstanceOfFlowers(loadFlowers);
+
+
+
 
     }
 }
