@@ -1,9 +1,11 @@
 package flowers;
 
+import java.io.Serializable;
+
 /**
  * Created by Liongate on 15.08.2017.
  */
-public class Flower {
+public class Flower implements Serializable {
     int price;
 
     Flower(){
