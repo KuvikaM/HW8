@@ -1,3 +1,4 @@
+import fileWork.FlowersSaver;
 import flowers.Flower;
 import flowers.FlowerStore;
 
@@ -25,6 +26,13 @@ public class Main {
         store.executeInstanceOfFlowers(flowers1);
         System.out.println();
         System.out.println("Total purse: "+ store.getPurse());
+
+
+
+        String fileName = "files/demo console file.txt";
+        
+
+       FlowersSaver.save(fileName,flowers);
 
     }
 }
