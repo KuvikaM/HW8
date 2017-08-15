@@ -5,6 +5,10 @@ package flowers;
  */
 public class Tulip extends Flower {
 
+    Tulip(){
+        price = 45;
+    }
+
     public void show() {
         System.out.print("Тюльпан");
     }
