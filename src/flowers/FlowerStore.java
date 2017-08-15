@@ -5,6 +5,30 @@ package flowers;
  */
 public class FlowerStore {
 
+    private int purse =0;
+
+    public int getPurse() {
+        return purse;
+    }
+
+    public void setPurse(int purse) {
+        this.purse = purse;
+    }
+
+
+    public int addPurse(Flower[] flowers){
+
+        for (Flower arrayElement: flowers
+             ) {
+            purse +=arrayElement.price;
+
+        }
+
+        return purse;
+
+    }
+
+
     public Flower[] sell(int roseCount , int chamomileCount , int tulipCount)
     {
 
@@ -31,6 +55,8 @@ public class FlowerStore {
             flowers[j] = new Tulip();
             j++;
         }
+
+        addPurse(flowers);
 
         return flowers;
 
@@ -65,6 +91,8 @@ public class FlowerStore {
                 counterTulip++;}
 
         }
+
+        addPurse(flowers);
 
         return flowers;
 
